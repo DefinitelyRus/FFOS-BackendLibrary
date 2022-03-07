@@ -1,4 +1,4 @@
-﻿namespace FFOSBackendLibrary;
+﻿namespace FFOS_Backend_Library;
 
 public class ListHandler
 {
