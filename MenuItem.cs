@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FFOS_Backend_Library
+﻿namespace FFOS_Backend_Library
 {
     public class MenuItem
     {
@@ -8,7 +6,7 @@ namespace FFOS_Backend_Library
         private string name = "";
         private float price = 0;
         private string imgFileName = "";
-        //private
+        
 
         public MenuItem(string id, string itemName = "", float price = 0, string imgFileName = "")
         {
@@ -50,9 +48,5 @@ namespace FFOS_Backend_Library
             //TODO: Make try-catch for missing file/folder.
             return Environment.ProcessPath + "/Images/" + this.imgFileName;
         }
-
-        //Image File IMAGE: The Image object to be displayed.
-        
-
     }
 }
