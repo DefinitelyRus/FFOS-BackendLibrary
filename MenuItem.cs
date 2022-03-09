@@ -8,12 +8,12 @@
         private string imgFileName = "";
         
 
-        public MenuItem(string id, string itemName = "", float price = 0, string imgFileName = "")
+        public MenuItem(string ID, string ItemName = "", float Price = 0, string ImageFileName = "")
         {
-            this.id = id;
-            this.name = itemName;
-            this.price = price;
-            this.imgFileName = imgFileName;
+            this.id = ID;
+            this.name = ItemName;
+            this.price = Price;
+            this.imgFileName = ImageFileName;
         }
 
         //Item ID STRING: A unique ID for the item.
@@ -46,7 +46,7 @@
         public string getImgFilePath()
         {
             //TODO: Make try-catch for missing file/folder.
-            return Environment.ProcessPath + "/Images/" + this.imgFileName;
+            return MasterClass.GetDirectory("images") + this.imgFileName;
         }
     }
 }
