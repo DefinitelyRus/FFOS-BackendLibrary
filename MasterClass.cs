@@ -310,7 +310,7 @@ public class MasterClass
         if (testPrint) Console.WriteLine("Attempting to read file from \"" + filePath + "\"...");
 
         try { text = File.ReadAllText(filePath); }
-        catch (FileNotFoundException) { return ReadFile(TextFileNotFoundAutoFix(filePath), testPrint); }
+        catch { return ReadFile(TextFileNotFoundAutoFix(filePath), testPrint); }
 
         if (testPrint)
         {
@@ -432,7 +432,7 @@ public class MasterClass
         }
 
         //Creates all missing directories.
-        Directory.CreateDirectory(directoryNoFile);
+        Directory.CreateDirectory(directoryNoFile + @"\Images");
 
         //Creates the file at the target directory.
         File.CreateText(filePath).Close();
