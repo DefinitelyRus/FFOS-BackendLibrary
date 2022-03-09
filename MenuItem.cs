@@ -46,7 +46,7 @@
         public string getImgFilePath()
         {
             //TODO: Make try-catch for missing file/folder.
-            return MasterClass.GetDirectory("images") + this.imgFileName;
+            return MasterClass.GetDirectory("images") + "\\" + this.imgFileName;
         }
     }
 }
